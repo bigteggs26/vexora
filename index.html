@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080B14">
+    <meta name="description" content="VEXORA Technologies builds innovative digital solutions that help businesses grow and move beyond limits.">
+
+    <title>VEXORA Technologies | Build Beyond Limits</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Animated background -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <!-- Navbar -->
+    <header class="navbar">
+    <a href="index.html" class="logo" aria-label="VEXORA Home">
+        <img src="vexora-logo.png" alt="" class="logo-img">
+    VEXORA<span>.</span>
+    </a>
+
+        <nav class="nav-links" id="primary-navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+                ☀
+            </button>
+
+            <a href="#contact" class="btn btn-primary nav-cta">
+                Let's Talk <span>↗</span>
+            </a>
+
+            <button class="menu-toggle" type="button"
+                aria-label="Open navigation"
+                aria-controls="primary-navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero container" id="home">
+            <div class="hero-content reveal">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    INNOVATION MEETS EXECUTION
+                </div>
+
+                <h1>
+                    We Build Beyond
+                    <span class="gradient-text">Limits.</span>
+                </h1>
+
+                <p>
+                    We transform bold ideas into intelligent digital
+                    solutions. VEXORA Technologies helps businesses
+                    innovate, scale, and thrive in a digital-first world.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        Explore Our Services <span>↗</span>
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        Discover VEXORA
+                    </a>
+                </div>
+
+                <div class="hero-proof">
+                    <span class="proof-line"></span>
+                    <span>Driven by innovation. Built for impact.</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+
+                <div class="core-glow"></div>
+
+                <div class="core">
+                    <span>V</span>
+                </div>
+
+                <div class="float-card float-card-one">
+                    <span class="float-icon purple-icon">✳</span>
+                    <div>
+                        <strong>Innovation</strong>
+                        <small>Ideas into impact</small>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-two">
+                    <span class="float-icon cyan-icon">⌘</span>
+                    <div>
+                        <strong>Technology</strong>
+                        <small>Built for tomorrow</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section container" id="about">
+            <div class="section-heading reveal">
+                <span class="eyebrow">WHO WE ARE</span>
+                <h2>Technology with <span class="gradient-text">purpose.</span></h2>
+                <p>
+                    We combine creativity, strategy, and technology to
+                    solve problems and create meaningful digital experiences.
+                </p>
+            </div>
+
+            <div class="about-panel glass-card reveal">
+                <div class="about-mark">V.</div>
+                <div>
+                    <h3>Built on ideas. Driven by possibilities.</h3>
+                    <p>
+                        At VEXORA Technologies, we believe great technology
+                        should do more than look impressive. It should solve
+                        real problems, improve experiences, and create new
+                        opportunities for growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section container" id="services">
+            <div class="section-heading reveal">
+                <span class="eyebrow">WHAT WE DO</span>
+                <h2>Solutions that move you <span class="gradient-text">forward.</span></h2>
+                <p>Smart digital capabilities for ambitious businesses.</p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card glass-card reveal">
+                    <div class="service-icon">⌘</div>
+                    <span class="card-number">01 / DIGITAL</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        Modern, responsive websites designed to strengthen
+                        your brand and deliver seamless user experiences.
+                    </p>
+                    <a href="#contact" class="text-link">Explore service ↗</a>
+                </article>
+
+                <article class="service-card glass-card reveal">
+                    <div class="service-icon">✳</div>
+                    <span class="card-number">02 / INTELLIGENCE</span>
+                    <h3>AI & Automation</h3>
+                    <p>
+                        Smarter workflows and intelligent systems that help
+                        businesses reduce repetitive work and work efficiently.
+                    </p>
+                    <a href="#contact" class="text-link">Explore service ↗</a>
+                </article>
+
+                <article class="service-card glass-card reveal">
+                    <div class="service-icon">◈</div>
+                    <span class="card-number">03 / STRATEGY</span>
+                    <h3>Digital Solutions</h3>
+                    <p>
+                        Purpose-built digital tools that address business
+                        challenges and support sustainable growth.
+                    </p>
+                    <a href="#contact" class="text-link">Explore service ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section container" id="projects">
+            <div class="section-heading reveal">
+                <span class="eyebrow">OUR WORK</span>
+                <h2>Ideas become <span class="gradient-text">reality.</span></h2>
+                <p>
+                    A space for projects, experiments, and digital products
+                    created with purpose.
+                </p>
+            </div>
+
+            <div class="project-placeholder glass-card reveal">
+                <div class="project-symbol">V<span>.</span></div>
+                <span class="eyebrow">THE NEXT CHAPTER</span>
+                <h3>Our projects are taking shape.</h3>
+                <p>
+                    This is where our latest work and case studies will appear.
+                    Stay connected as we build what comes next.
+                </p>
+                <a href="#contact" class="btn btn-outline">Work With Us ↗</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section container" id="contact">
+            <div class="contact-panel glass-card reveal">
+                <span class="eyebrow">LET'S BUILD SOMETHING</span>
+                <h2>Your next big idea starts <span class="gradient-text">here.</span></h2>
+                <p>
+                    Have an idea, a challenge, or a project in mind?
+                    Let's explore what's possible.
+                </p>
+                <a href="mailto:hello@vexora.com" class="btn btn-primary">
+                    Start a Conversation ↗
+                </a>
+                <small>Replace this sample email with your official business email.</small>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="index.html" class="logo">
+            <img src="vexora-logo.png" alt="" class="logo-img">
+            VEXORA<span>.</span>
+         </a>
+            <p>Build Beyond Limits.</p>
+            <span>© <span id="current-year"></span> VEXORA Technologies.</span>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+</body>
+</html>
