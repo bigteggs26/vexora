@@ -66,7 +66,7 @@ themeBtn.addEventListener('click', () => {
       if (num) countUp(num);
       io.unobserve(e.target);
     });
-  }, { threshold: 0.18 });
+  },  { threshold: 0.05, rootMargin: '0px 0px -5% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   // 3. Count-up numbers
