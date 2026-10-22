@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact | VEXORA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href= "contact.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="page-hero">
+  <nav class="nav" aria-label="Main">
+    <a href="index.html" class="brand"><span class="brand-mark"></span><span>VEXORA</span></a>
+
+    <ul class="links" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Solutions</a></li>
+      <li><a href="projects.html">Innovation</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="actions">
+      <button id="theme" class="theme-btn" aria-label="Toggle theme">🌙</button>
+      <a href="contact.html" class="cta" aria-current="page">Get Started</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </nav>
+
+  <div class="hero-copy">
+    <p class="eyebrow">Contact</p>
+    <h1>Let's talk about your problem.</h1>
+    <p class="lead">Tell us what you are trying to fix. We will reply with honest next steps, not a sales script.</p>
+  </div>
+</header>
+
+<main>
+  <section class="sec" aria-labelledby="form-title">
+    <div class="contact-grid">
+
+      <!-- ===== FORM ===== -->
+      <div class="reveal">
+        <h2 id="form-title" class="contact-h">Send us a message</h2>
+
+        <form id="contact-form" action="https://formspree.io/f/mgaawblk" method="POST" novalidate>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="err" id="name-err" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <p class="err" id="email-err" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="org">Organisation</label>
+              <input id="org" name="organisation" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="who">I am a</label>
+              <select id="who" name="who">
+                <option value="">Choose one</option>
+                <option>School or exam centre</option>
+                <option>SME</option>
+                <option>Corporation</option>
+                <option>Public institution</option>
+                <option>Distributor or partner</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="interest">I am interested in</label>
+              <select id="interest" name="interest">
+                <option value="">Choose one</option>
+                <option>AI &amp; Automation</option>
+                <option>Software &amp; Systems</option>
+                <option>School Management &amp; CBT</option>
+                <option>Robotics &amp; IoT</option>
+                <option>Business Solutions</option>
+                <option>Research &amp; Innovation</option>
+                <option>A partnership</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">How can we help? <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <p class="err" id="message-err" role="alert"></p>
+          </div>
+
+          <!-- Spam trap: real people never see or fill this -->
+          <p class="trap" aria-hidden="true">
+            <label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <input type="hidden" name="_subject" value="New enquiry from the VEXORA website">
+
+          <button type="submit" class="cta cta-lg" id="send">Send message</button>
+          <p class="form-note">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+
+          <p class="status" id="status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+
+      <!-- ===== SIDE INFO ===== -->
+      <aside class="contact-side reveal" style="--i:2" aria-label="Contact details">
+        <h2 class="contact-h">Reach us directly</h2>
+        <ul class="contact-list">
+          <!-- Replace with your real details -->
+          <li><span>Email</span><a href="mailto:info.vexoratech@gmail.com">info.vexoratech@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+234XXXXXXXXXX">+234 XXX XXX XXXX</a></li>
+          <li><span>Location</span>Your city, Nigeria</li>
+          <li><span>Hours</span>Monday to Friday, 9am to 5pm</li>
+        </ul>
+
+        <h2 class="contact-h next-h">What happens next</h2>
+        <ol class="next-list">
+          <li><strong>We read it.</strong> A real person reviews your message.</li>
+          <li><strong>We reply.</strong> You get an answer, usually within two working days.</li>
+          <li><strong>We talk.</strong> A short call to understand the problem before we propose anything.</li>
+        </ol>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+
+ <footer class="site-footer">
+  <div class="foot-top">
+
+    <div class="foot-brand">
+      <a href="#home" class="brand"><span class="brand-mark"></span><span>VEXORA</span></a>
+      <p>Intelligence. Innovation. Impact.</p>
+      <p class="foot-small">A Delight Tech Edu Group company.</p>
+    </div>
+
+    <nav class="foot-col" aria-label="Footer navigation">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#industries">Industry solutions</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#process">Our process</a></li>
+      </ul>
+    </nav>
+
+    <div class="foot-col">
+      <h3>Contact</h3>
+      <ul>
+        <!-- Replace these with your real details -->
+        <li><a href="info.vexoratech@gmail.com">info.vexoratech@gmail.com</a></li>
+        <li><a href="tel:+234XXXXXXXXXX">+234 XXX XXX XXXX</a></li>
+        <li>Your city, Nigeria</li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="foot-bottom">
+    <p>© <span id="year">2026</span> VEXORA. All rights reserved.</p>
+    <a href="#home" class="to-top">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* Contact form -> Formspree (no page reload) */
+(() => {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('status');
+  const btn = document.getElementById('send');
+  const rules = {
+    name:    v => v.trim().length >= 2 ? '' : 'Please enter your name.',
+    email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : 'Please enter a valid email address.',
+    message: v => v.trim().length >= 10 ? '' : 'Please tell us a little more (at least 10 characters).'
+  };
+
+  function check(id) {
+    const field = form.elements[id];
+    const msg = rules[id](field.value);
+    document.getElementById(id + '-err').textContent = msg;
+    field.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    return !msg;
+  }
+  Object.keys(rules).forEach(id => form.elements[id].addEventListener('blur', () => check(id)));
+
+  function show(text, kind) {
+    status.hidden = false;
+    status.className = 'status ' + kind;
+    status.textContent = text;
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const ok = Object.keys(rules).map(check).every(Boolean);
+    if (!ok) { form.querySelector('[aria-invalid="true"]').focus(); return; }
+
+    btn.disabled = true; btn.textContent = 'Sending…'; status.hidden = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        show('Thank you. Your message has been sent and we will reply soon.', 'ok');
+      } else {
+        const data = await res.json().catch(() => ({}));
+        show((data.errors && data.errors.map(x => x.message).join(', ')) || 'Something went wrong. Please try again or email us directly.', 'bad');
+      }
+    } catch (err) {
+      show('We could not send your message. Check your connection and try again, or email us directly.', 'bad');
+    } finally {
+      btn.disabled = false; btn.textContent = 'Send message';
+    }
+  });
+})();
+</script>
+</body>
+</html>
